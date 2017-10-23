@@ -43,6 +43,11 @@ var main = function () {
         }, 400);
     });
     
+    $('#contact-btn').click(function() {
+        $('html, body').animate({
+        scrollTop: $("#contact-page").offset().top
+        }, 400);
+    });
 };
 
 //$('.banner').parallax({imageSrc:'DSC_1119-GreenB.png'});
