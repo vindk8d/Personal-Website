@@ -217,8 +217,6 @@ html, body {
     font-size: 3.5rem;
     position: relative;
     visibility: hidden;
-    color: black;
-    
 }
 
 #intro-text-box {
@@ -242,7 +240,6 @@ html, body {
 
 #intro-pic-box {
     grid-area: d/d/f/f;
-    overflow-x: hidden;
     position: relative;
 }
 
@@ -300,7 +297,6 @@ html, body {
     grid-area: a;
     margin-top: auto;
     padding-bottom: 10px;
-    color: black;
     text-align: center;
     vertical-align: bottom;
     border-bottom: black 1px solid;
