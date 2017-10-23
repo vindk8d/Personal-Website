@@ -295,8 +295,12 @@ html, body {
 #contact-text {
     font-family: 'Anton', sans-serif;
     grid-area: a;
-    margin: auto;
+    margin-top: auto;
+    padding-bottom: 10px;
     text-align: center;
+    vertical-align: bottom;
+    border-bottom: black 1px solid;
+    font-size: 3em;
 }
 
 #contact-logo-grid {
@@ -304,11 +308,12 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: auto;
-    
+    width: 100%;
 }
 
 .contact-logo {
     width: 70%;
+    max-width: 60px;
     margin: auto;
 }
 
@@ -404,7 +409,7 @@ html, body {
         }
     
         #contact-page {
-            grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
             grid-template-rows: 4fr 2fr 4fr 4fr;
             grid-template-areas: ". . . . ."
                                  ". a a a ."
@@ -413,8 +418,12 @@ html, body {
         }
     
         .contact-logo {
-            width: 40%;
+            width: 70%;
             margin: auto;
+        }
+    
+        #contact-text {
+            font-size: 3em;
         }
     
 }
