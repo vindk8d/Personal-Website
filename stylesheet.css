@@ -1,0 +1,376 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    display: grid;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 2fr 7fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "a a a"
+                         ". . ."
+                         "b b b"
+                         "c c c"
+                         "d d d"
+}
+
+.navigation {
+    height: 8vh;
+    display: grid;
+    position: fixed;
+    grid-template-columns: 2fr 3fr 40fr 3fr 1fr 3fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". a . b . c .";
+    width: 100%;
+}
+
+#profile-btn {
+    grid-area: b;
+}
+
+#contact-btn {
+    grid-area: c;
+}
+
+.nav-title {
+    grid-area: a;
+    font-size: 1.7em;
+    margin: auto;
+}
+
+.nav-text {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.nav-text-2nd-page {
+    color: black;
+}
+
+.nav-button {
+    margin: auto;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+}
+
+#title-box {
+    grid-area: b;
+}
+
+#subtitle {
+    grid-area: c;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -1px;
+    font-size: 3em;
+    margin: 0;
+    color: white;
+}
+
+.db-group {
+    position: relative;
+    top: 80vh;
+    margin: auto;
+}
+
+.down-button1 {
+    position: relative;
+    top: 50%;
+    left: 33.5%;
+    color: white;  
+}
+
+.down-button2 {
+    position: relative;
+    right: 20%;
+    color: white;
+}
+
+.db {
+    font-size: 24px;
+}
+
+.outer-history {
+    padding: 10px;
+    background-image: url(sample-workplace-BG.jpg);
+    background-color: rgba(0,0,0,0.65);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner-history1 {
+    border: 2px solid white;
+    padding: 6px;
+}
+
+.inner-history2 {
+    height: auto;
+    border: 4px white solid;
+    display: grid;
+    grid-template-columns: 1fr 16fr 1fr;
+    grid-template-rows: 80px 1fr 3fr 40px 1fr 4fr 40px 1fr 4fr 80px;
+    grid-template-areas: ". . ."
+                         ". e ."
+                         ". s ."
+                         ". . ."
+                         ". w ."
+                         ". j ." 
+                         ". . ."
+                         ". k ."
+                         ". i ."
+                         ". . .";      
+}
+
+#education-header {
+    grid-area: e;
+    color: white;
+    border-bottom: 1px white solid;
+}
+
+
+#work-header {
+    grid-area: w;
+    color: white;
+    border-bottom: 1px white solid;
+}
+
+#education-items {
+    grid-area: s;
+}
+
+#work-items {
+    grid-area: j;
+}
+
+#skills-header {
+    grid-area: k;
+    color: white;
+    border-bottom: 1px white solid;
+}
+
+#skills-items {
+    grid-area: i;
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 5fr;
+    grid-template-rows: 5fr 5fr 5fr;
+    margin: 5px 0;
+}
+
+.skills-logo {
+    height: auto;
+    width: 100%;
+    max-width: 60px;
+    padding: 15px;
+    margin: auto;
+}
+
+.history-header {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+.history-items {
+    font-family: 'Oswald', sans-serif;
+    margin: 5px 0 2px 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.history-subitems {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: -5px 0 0 0;
+    text-align: right;
+    color: white;
+}
+
+.intro {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 30fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . ."
+                         "a a a"
+                         ". b ."
+                         "c c c"
+                         "d d d"
+                         "e e e"
+                         "f f f";
+}
+
+.intro-text {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-top: auto;
+    grid-area: a;
+    font-size: 3.5rem;
+    position: relative;
+    visibility: hidden;
+}
+
+#intro-text-box {
+    grid-area: b;
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -1px;
+    visibility: hidden;
+    position: relative;
+    margin-bottom: auto;
+    margin-top: 0;
+ }
+
+.intro-desc {
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 10px;
+}
+
+#intro-pic-box {
+    grid-area: d/d/f/f;
+    position: relative;
+}
+
+#intro-pic {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+#know-me {
+    border: black 2px solid;
+    background: none;
+    grid-area: c;
+    height: 50px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+    transition: 0.5s;
+}
+
+#know-me:hover {
+    background-color: rgba(0,0,0,0.65);
+    color: white;
+}
+
+#know-me:active {
+    top: 2px;
+    transition: 0s;
+}
+
+@media only screen and (min-width: 768px){
+        .navigation {
+            height: 12vh;
+        }
+        #title-box {
+            grid-area: b
+        }
+
+        #subtitle {
+            grid-area: c
+        }
+        
+        .inner-history2 {
+            height: 94%;
+            grid-template-columns: 1fr 3fr 6fr 1fr;
+            grid-template-rows: 3fr 3fr 1fr 4fr 1fr 5fr 3fr;
+            grid-template-areas: ". . . ."
+                                 ". e s ."
+                                 ". . . ."
+                                 ". w j ."
+                                 ". . . ."
+                                 ". k i ."
+                                 ". . . .";
+        }
+        
+        #work-header {
+            border-bottom: none;
+            border-right: white 1px solid;
+            margin: 10px;
+        }
+    
+        #education-header {
+            border-bottom: none;
+            border-right: white 1px solid;
+            margin: 10px;
+        }
+    
+        .history-subitems {
+            text-align: left;
+            margin-left: 100px
+        }
+    
+        #skills-header {
+            border-bottom: none;
+            border-right: white 1px solid;
+            margin: 10px;
+        }
+        
+        .skills-logo {
+            max-width: 55px;
+            padding: 10px;
+        }
+    
+        #skills-items {
+            margin: 0 50px;
+            grid-template-columns: 5fr 5fr 5fr 5fr 5fr;
+            grid-template-rows: 5fr 5fr;
+        }
+        
+        .intro {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 3fr 5fr 10fr 10fr 10fr;
+            grid-template-rows: 1fr 5fr 2fr 2fr 5fr;
+            grid-template-areas: ". . . . ."
+                                 ". a a d d"
+                                 ". b b d d"
+                                 ". c c d d"
+                                 ". . . d d";
+   
+        }
+        
+        #intro-pic-box {
+            grid-area: d;
+            overflow-x: hidden;
+        }
+        
+        #intro-pic {
+            height: 75%;
+            width: auto;
+            max-width: none;
+            margin: none;
+            left: 0
+                    
+        }
+
+        #know-me {
+            margin-top: 4%;
+            margin-bottom: auto;
+        }
+
+        
+        
+       
+}
