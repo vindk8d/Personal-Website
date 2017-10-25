@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="animate.css">
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,23 +14,21 @@
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
+        <title>VIN</title>
     </head>
     <body>
-        <div class="navigation">
-                <p class="nav-text nav-title">VP</p>
+        <div class="navigation animated fadeIn">
+                <a class="nav-title" href="http://vinperez.com"> <img class="nav-title-img" src="png/Site%20logo@0,25x.png"> </a>
                 <button class="nav-text nav-button" id="profile-btn" type="button">Profile</button>
                 <button class="nav-text nav-button" id="contact-btn" type="button">Contact</button>
-            </div>
+        </div>
         <div class="banner">
-
-
             <div id="title-box">
-                <h1 id="title">Vin Perez</h1>
+                <h1 id="title" class="animated fadeInUp">Vin Perez</h1>
             </div>
             <div id="subtitle"></div>
-            <div id="know-me-button"></div>
-
-            <div class="db-group">
+            
+            <div class="db-group animated fadeIn">
                 <i class="glyphicon glyphicon-chevron-down down-button1 db"></i>
                 <i class="glyphicon glyphicon-chevron-down down-button2 db"></i>
             </div>
@@ -96,12 +95,22 @@
         <div id="contact-page">
             <h1 id="contact-text">Let's get in touch</h1>
             <div id="contact-logo-grid">
-                <img class="contact-logo" src="png/001-square-1.png">
-                <img class="contact-logo" src="png/002-square.png">
-                <img class="contact-logo" src="png/003-social.png">
-                <img class="contact-logo" src="png/004-github-logo.png">
+                <a class="contact-logo" href="https://twitter.com/vindk8d"> 
+                    <img class="contact-logo-pic" src="png/001-square-1.png"> 
+                </a>
+                <a class="contact-logo" href="https://www.facebook.com/vin.perez"> 
+                    <img class="contact-logo-pic" src="png/002-square.png"> 
+                </a>
+                <a class="contact-logo" href="https://www.linkedin.com/in/vin-perez-8a09088a/">
+                    <img class="contact-logo-pic" src="png/003-social.png">
+                </a>
+                <a class="contact-logo" href="https://github.com/vindk8d">
+                    <img class="contact-logo-pic" src="png/004-github-logo.png">
+                </a>
             </div>
+            <p id="footer">© Vin Perez | 2017 </p>
         </div>
+        
         <script src="http://www.google.com/jsapi" type="text/javascript"></script>
         <script type="text/javascript">google.load("jquery", "1.3.2");</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

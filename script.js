@@ -14,18 +14,16 @@ var main = function () {
     });
     
     $(window).scroll(function(){
-      if ($(this).scrollTop()>$(window).height()*0.65 && $('.intro-text').css('visibility')==='hidden') {
-          $('.intro-text').css('visibility','visible').hide().fadeIn({queue:false},800).animate({top:"+=10px"}, 800);
-      }
-      if ($(this).scrollTop()>$(window).height()*0.75 && $('#intro-text-box').css('visibility')==='hidden') {
-          $('#intro-text-box').css('visibility','visible').hide().fadeIn({queue:false},800).animate({top:"+=10px"}, 800);
+      if ($(this).scrollTop()>$(window).height()*0.45) {
+          $('.intro-text').css('visibility','visible').addClass('animated fadeInUp');
+          $('#intro-text-box').css('visibility','visible').addClass('animated fadeInUp');
       }
         
       if ($(this).scrollTop()>$(window).height()*0.95){
-          $('.navigation').fadeOut(200);
+          $('.navigation').css('visibility','hidden');
       }
       else {
-          $('.navigation').fadeIn(200);
+          $('.navigation').css('visibility','visible');
       }
         
     });
