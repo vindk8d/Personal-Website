@@ -14,9 +14,9 @@ var main = function () {
     });
     
     $(window).scroll(function(){
-      if ($(this).scrollTop()>$(window).height()*0.45) {
-          $('.intro-text').css('visibility','visible').addClass('animated fadeInUp');
-          $('#intro-text-box').css('visibility','visible').addClass('animated fadeInUp');
+      if ($(this).scrollTop()>$(window).height()*0.35) {
+          $('.intro-text').css('visibility','visible').addClass('animated fadeIn');
+          $('#intro-text-box').css('visibility','visible').addClass('animated fadeIn');
       }
         
       if ($(this).scrollTop()>$(window).height()*0.95){
