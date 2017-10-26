@@ -156,10 +156,12 @@ html, body {
 
 #education-items {
     grid-area: s;
+    opacity: 0;
 }
 
 #work-items {
     grid-area: j;
+    opacity: 0;
 }
 
 #skills-header {
@@ -170,6 +172,7 @@ html, body {
 
 #skills-items {
     grid-area: i;
+    opacity: 0;
     display: grid;
     grid-template-columns: 5fr 5fr 5fr 5fr;
     grid-template-rows: 5fr 5fr 5fr;
@@ -225,7 +228,7 @@ html, body {
     margin-top: auto;
     grid-area: a;
     font-size: 3.5rem;
-    visibility: hidden;
+    opacity: 0;
     position: relative;
 }
 
@@ -237,7 +240,7 @@ html, body {
     position: relative;
     margin-bottom: auto;
     margin-top: 0;
-    visibility: hidden;    
+    opacity: 0;   
  }
 
 .intro-desc {
@@ -256,6 +259,7 @@ html, body {
 #intro-pic {
     max-width: 100%;
     max-height: 100%;
+    opacity: 0;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -266,6 +270,7 @@ html, body {
 
 #know-me {
     border: black 2px solid;
+    opacity: 0;
     background: none;
     grid-area: c;
     height: 50px;
@@ -277,6 +282,8 @@ html, body {
     font-family: 'Oswald', sans-serif;
     font-size: 1.6em;
     transition: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.3s;
 }
 
 #know-me:hover {
@@ -292,10 +299,15 @@ html, body {
 #principles-page {
     display: grid;
     background-color: whitesmoke;
-    grid-template-columns: 1fr 10fr 1fr;
+    padding: 40px 20px;
     grid-auto-rows: max-content;
-    grid-template-areas: ". a ."
-                         ". b .";
+    grid-template-areas: "a"
+                         "b"
+                         "c"
+                         "d"
+                         "e"
+                         "f"
+                         "g";
 }
 
 .main-principle-header {
@@ -303,7 +315,6 @@ html, body {
     margin: auto;
     text-align: center;
     grid-area: a;
-    margin-top: 30px;
 }
 
 .sub-principle-header {
@@ -311,7 +322,9 @@ html, body {
     font-family: 'Oswald', sans-serif;
     margin-top: 0;
     margin: auto;
+    padding-bottom: 30px;
 }
+
 
 #contact-page {
     height: 100%;
@@ -367,7 +380,7 @@ html, body {
 
 
 
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 768px){
         .navigation {
             height: 8vh;
         }
@@ -476,5 +489,61 @@ html, body {
         #contact-text {
             font-size: 3em;
         }
+        
+        #principles-page {
+            
+            padding: 40px 10%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0fr 0fr 1fr 1fr;
+            grid-template-areas: "a a"
+                                 "b b"
+                                 "c d"
+                                 
+        }
     
+}
+
+.principle {
+    padding: 30px;
+    opacity: 0;
+}
+
+.principle-title {
+    font-family: 'Sanchez', serif;
+}
+
+.quote {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.quote-person {
+    font-family: 'Work Sans', sans-serif;  
+    text-align: right
+}
+
+.quotation-marks-left {
+    font-size: 120px;
+    color: rgba(130,0,0,0.60);
+    float: left;
+    margin: 0px 10px;
+    padding: 0px;
+    height: 32px;
+}
+
+.quotation-marks-right {
+    display:inline;
+    font-size: 120px;
+    color: rgba(130,0,0,0.60);
+    float: right;
+    margin: 0px 10px;
+    padding: 0px;
+    height: 32px;
+    position: relative;
+    bottom: 40px;
+    clear:left;
+}
+
+.quote-whole {
+    padding: 10px;
+    max-width: 540px;
 }

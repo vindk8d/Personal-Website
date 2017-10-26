@@ -88,6 +88,24 @@
   animation-name: pulse;
 }
 
+@keyframes pulseBigger {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.25, 1.25, 1.25);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulseBigger {
+  animation-name: pulseBigger;
+}
+
 @keyframes rubberBand {
   from {
     transform: scale3d(1, 1, 1);

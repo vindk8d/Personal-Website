@@ -15,9 +15,27 @@ var main = function () {
     
     $(window).scroll(function(){
       if ($(this).scrollTop()>$(window).height()*0.35) {
-          $('.intro-text').css('visibility','visible').addClass('animated fadeIn');
-          $('#intro-text-box').css('visibility','visible').addClass('animated fadeIn');
-      }
+          $('.intro-text').addClass('animated fadeIn');
+          $('#intro-text-box').addClass('animated fadeIn');
+          $('#intro-pic').addClass('animated fadeIn');
+          $('#know-me').addClass('animated fadeInUp');
+      };
+      
+      if ($(this).scrollTop()>$('#intro-page').position().top+$(window).height()*0.35) {
+          $('.principle').addClass('animated fadeIn');
+      };
+        
+      if ($(this).scrollTop()+$(window).height()>$('#history-page').position().top+$(window).height()*0.25) {
+          $('#education-items').addClass('animated fadeIn');
+      };
+        
+      if ($(this).scrollTop()+$(window).height()>$('#history-page').position().top+$(window).height()*0.65) {
+          $('#work-items').addClass('animated fadeIn');
+      };
+        
+      if ($(this).scrollTop()+$(window).height()>$('#history-page').position().top+$(window).height()*0.85) {
+          $('#skills-items').addClass('animated fadeIn');
+      };
         
       if ($(this).scrollTop()>$(window).height()*0.95){
           $('.navigation').css('visibility','hidden');
@@ -26,8 +44,27 @@ var main = function () {
           $('.navigation').css('visibility','visible');
       }
         
+    
+        
     });
     
+    $('.skills-logo').hover(
+        function() {
+            $(this).addClass('animated pulseBigger');
+        },
+        function() {
+            $(this).removeClass('animated pulseBigger');
+        }
+    );
+    
+    $('.contact-logo').hover(
+        function() {
+            $(this).addClass('animated pulseBigger');
+        },
+        function() {
+            $(this).removeClass('animated pulseBigger');
+        }
+    );
     
     $('#know-me').click(function() {
         $('html, body').animate({
