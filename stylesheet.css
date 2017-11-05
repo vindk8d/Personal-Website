@@ -330,7 +330,7 @@ html, body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 10fr 2fr 2fr 4fr 1fr;
+    grid-template-rows: 15fr 2fr 2fr 4fr 1fr;
     grid-template-areas: ". . ."
                          ". a ."
                          ". b ."
@@ -374,6 +374,64 @@ html, body {
     grid-area: c;
     margin: auto;
     font-family: 'Oswald', sans-serif;
+}
+
+
+.principle {
+    padding: 30px;
+    opacity: 0;
+}
+
+.principle-title {
+    font-family: 'Sanchez', serif;
+}
+
+.quote {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.quote-person {
+    font-family: 'Work Sans', sans-serif;  
+    text-align: right
+}
+
+.quotation-marks-left {
+    font-size: 120px;
+    color: rgba(130,0,0,0.60);
+    float: left;
+    margin: 0px 10px;
+    padding: 0px;
+    height: 32px;
+}
+
+.quotation-marks-right {
+    display:inline;
+    font-size: 120px;
+    color: rgba(130,0,0,0.60);
+    float: right;
+    margin: 0px 10px;
+    padding: 0px;
+    height: 32px;
+    position: relative;
+    bottom: 40px;
+    clear:left;
+}
+
+.quote-whole {
+    padding: 10px;
+    max-width: 540px;
+}
+
+.banner-quote-whole {
+    margin: 0 20px;
+    padding: 10px;
+    max-width: 540px;
+    background-color: rgba(0,0,0,0.70);
+    color: white;
+}
+
+#banner1 {
+    height: 100%;
 }
 
 
@@ -497,53 +555,15 @@ html, body {
                                  
         }
     
-}
-
-.principle {
-    padding: 30px;
-    opacity: 0;
-}
-
-.principle-title {
-    font-family: 'Sanchez', serif;
-}
-
-.quote {
-    font-family: 'Work Sans', sans-serif;
-}
-
-.quote-person {
-    font-family: 'Work Sans', sans-serif;  
-    text-align: right
-}
-
-.quotation-marks-left {
-    font-size: 120px;
-    color: rgba(130,0,0,0.60);
-    float: left;
-    margin: 0px 10px;
-    padding: 0px;
-    height: 32px;
-}
-
-.quotation-marks-right {
-    display:inline;
-    font-size: 120px;
-    color: rgba(130,0,0,0.60);
-    float: right;
-    margin: 0px 10px;
-    padding: 0px;
-    height: 32px;
-    position: relative;
-    bottom: 40px;
-    clear:left;
-}
-
-.quote-whole {
-    padding: 10px;
-    max-width: 540px;
-}
-
-#banner1 {
-    height: 100%;
+        .banner-quote-whole {
+            margin: 0;
+            position: relative;
+            top: 20%;
+            left: 10%;
+            padding: 10px;
+            max-width: 540px;
+            background-color: rgba(0,0,0,0.70);
+            color: white;
+        }
+    
 }
