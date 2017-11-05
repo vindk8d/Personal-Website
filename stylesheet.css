@@ -424,7 +424,7 @@ html, body {
 .contact-logo-pic {
     width: 70%;
     min-width: 45px;
-    max-width: 70px;
+    max-width: 50%;
     margin: auto;
     display: block;
 }
@@ -442,7 +442,7 @@ html, body {
 
 
 
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 786px){
         .navigation {
             height: 8vh;
         }
@@ -532,7 +532,7 @@ html, body {
         }
     
         #contact-page {
-            grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+            grid-template-columns: 2fr 1fr 3fr 1fr 2fr;
             grid-template-rows: 20fr 2fr 4fr 4fr 1fr;
             grid-template-areas: ". . . . ."
                                  ". a a a ."
@@ -547,7 +547,7 @@ html, body {
         }
     
         #contact-text {
-            font-size: 3em;
+            font-size: 3.2em;
         }
         
         #principles-page {
@@ -572,4 +572,66 @@ html, body {
             color: white;
         }
     
+}
+
+#history {
+    padding: 40px 0px 40px 0;
+}
+
+.history-title {
+    margin: 40px 0px 10px 0px;
+    text-align: center;
+    font-family: 'Anton', sans-serif; 
+}
+
+.history-card {
+    margin: auto;
+    padding: 100px 0 0 0;
+    border: grey solid 1px;
+}
+
+.history-card-title {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.history-card-subtitle {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+}
+
+#hbs-card {
+    background-image: url(harvard_school_img_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: overlay;
+}
+
+#up-card {
+    background-image: url(UP.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: overlay;
+}
+
+#catcha-card {
+    background-image: url(catcha_group_lounge.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: overlay;
+}
+
+#nestle-card {
+    background-image: url(NPI.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: overlay;
 }

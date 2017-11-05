@@ -20,11 +20,11 @@ var main = function () {
           $('#intro-pic').addClass('animated fadeIn');
           $('#know-me').addClass('animated fadeInUp');
       };
-      
+    
       if ($(this).scrollTop()>$('#intro-page').position().top+$(window).height()*0.35) {
           $('.principle').addClass('animated fadeIn');
       };
-        
+ /*       
       if ($(this).scrollTop()+$(window).height()>$('#history-page').position().top+$(window).height()*0.25) {
           $('#education-items').addClass('animated fadeIn');
       };
@@ -36,7 +36,7 @@ var main = function () {
       if ($(this).scrollTop()+$(window).height()>$('#history-page').position().top+$(window).height()*0.85) {
           $('#skills-items').addClass('animated fadeIn');
       };
-        
+*/        
       if ($(this).scrollTop()>$(window).height()*0.95){
           $('.navigation').css('visibility','hidden');
       }
@@ -87,4 +87,6 @@ var main = function () {
 
 $('#contact-page').parallax({imageSrc:'Steps.jpg'});
 $('#banner1').parallax({imageSrc:'CandidStudy.jpg'});
+//$('#hbs-card').parallax({imageSrc:'harvard_school_img_1.jpg'});
+//$('#up-card').parallax({imageSrc:'up.jpg'});
 $(document).ready(main)
