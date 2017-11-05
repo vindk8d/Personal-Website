@@ -85,6 +85,6 @@ var main = function () {
     });
 };
 
-//$('.banner').parallax({imageSrc:'DSC_1119-GreenB.png'});
-//$('.banner2').parallax({imageSrc:'DSC_1055-2.jpg'});
+$('#contact-page').parallax({imageSrc:'Steps.jpg'});
+$('#banner1').parallax({imageSrc:'CandidStudy.jpg'});
 $(document).ready(main)
